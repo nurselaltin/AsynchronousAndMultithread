@@ -1,0 +1,50 @@
+Hareket1,9900 Kodlu Kurum Odemesi
+Hareket2,4545 Kodlu Kurum Odemesi
+Hareket3,Kurum Odemesi
+Hareket4,Kurum Odemesi
+Hareket5,Kurum Odemesi
+Hareket6,7843 Kodlu Kurum Odemesi
+Hareket7,4455 Kodlu Kurum Odemesi
+Hareket8,77666 Kodlu Kurum Odemesi
+Hareket9,12345 Kodlu Kurum Odemesi
+Hareket10,Kurum Odemesi
+Hareket11,Kurum Odemesi
+Hareket12,12345 Kodlu Kurum Odemesi
+Hareket13,Sigorta Odemesi
+Hareket14,Sigorta Odemesi
+Hareket15,8888 Kodlu Kurum Odemesi
+Hareket16,99990 Kodlu Kurum Odemesi
+Hareket17,09876 Sigorta Odemesi
+Hareket18,1 Sigorta Odemesi
+Hareket19,Sigorta Odemesi
+Hareket20,12345 Kodlu Kurum Odemesi
+Hareket21,5656 Sigorta Odemesi
+Hareket22,12345 Kodlu Kurum Odemesi
+Hareket23,Kodlu Kurum Odemesi
+Hareket24,12345 Kodlu Kurum Odemesi
+Hareket25,Kurum Odemesi 453632 Odemesi
+Hareket26,12345 Kodlu Kurum Odemesi
+Hareket27,12345 Kodlu Kurum Odemesi
+Hareket28,Sigorta Odemesi
+Hareket29,12345 Kodlu Kurum Odemesi
+Hareket30,12345 Kodlu Kurum Odemesi
+Hareket31,9894 Sigorta Odemesi
+Hareket32,12345 Kodlu Kurum Odemesi
+Hareket33,12345 Kodlu Kurum Odemesi
+Hareket34,9824 Sigorta Odemesi
+Hareket35,12345 Kodlu Kurum Odemesi
+Hareket36,12345 Kodlu Kurum Odemesi
+Hareket37,9893 Sigorta Odemesi
+Hareket38,2344 Sigorta Odemesi
+Hareket39,12345 Kodlu Kurum Odemesi
+Hareket40,Kurum Odemesi 784652 Odemesi
+Hareket41,6573 Kodlu Kurum Odemesi
+Hareket42,8904 Kodlu Kurum Odemesi
+Hareket43,56446 Kodlu Kurum Odemesi
+Hareket44,78904 Kodlu Kurum Odemesi
+Hareket45,3333 Kodlu Kurum Odemesi
+Hareket46,9087 Kodlu Kurum Odemesi
+Hareket47,9474832 Kodlu Kurum Odemesi
+Hareket48,3452 Kodlu Kurum Odemesi
+Hareket49,Kurum Odemesi 784652 Odemesi
+Hareket50,Sigorta Odemesi

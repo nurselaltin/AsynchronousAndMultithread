@@ -1,0 +1,15 @@
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\bin\Debug\net6.0\AsenkronMultithread.exe
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\bin\Debug\net6.0\AsenkronMultithread.deps.json
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\bin\Debug\net6.0\AsenkronMultithread.runtimeconfig.json
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\bin\Debug\net6.0\AsenkronMultithread.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\bin\Debug\net6.0\AsenkronMultithread.pdb
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.csproj.AssemblyReference.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.AssemblyInfoInputs.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.AssemblyInfo.cs
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.csproj.CoreCompileInputs.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\refint\AsenkronMultithread.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.pdb
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\AsenkronMultithread.genruntimeconfig.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\AsenkronMultithread\obj\Debug\net6.0\ref\AsenkronMultithread.dll

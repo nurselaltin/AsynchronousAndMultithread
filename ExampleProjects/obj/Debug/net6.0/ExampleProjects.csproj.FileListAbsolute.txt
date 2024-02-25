@@ -1,0 +1,17 @@
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\ExampleProjects.exe
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\ExampleProjects.deps.json
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\ExampleProjects.runtimeconfig.json
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\ExampleProjects.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\ExampleProjects.pdb
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.csproj.AssemblyReference.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.AssemblyInfoInputs.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.AssemblyInfo.cs
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.csproj.CoreCompileInputs.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\refint\ExampleProjects.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.pdb
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.genruntimeconfig.cache
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ref\ExampleProjects.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\nursel.altin\Desktop\Belgeler\Projects\AsenkronMultithread\AsenkronMultithread\ExampleProjects\obj\Debug\net6.0\ExampleProjects.csproj.CopyComplete
