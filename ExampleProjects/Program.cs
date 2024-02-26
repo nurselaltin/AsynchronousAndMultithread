@@ -3,7 +3,7 @@
 //3) Regex sınıfını kullan(+)
 //4) Multithreading yakalaşımını kullan (Asıl anlatılması gereken kısım)(+)
 //5) ConvertedItems.txt dosyasını yeni haliyle güncelle(+)
-//6) Githuba projeyi yükle
+//6) Githuba projeyi yükle(+)
 //7) Medium yazısı yaz
 using ExampleProjects;
 using ExampleProjects.Model;
@@ -14,7 +14,7 @@ try
 {
   var convertItems = new List<ItemModel>();
   var items = BaseOperation.ReadItemFromTXT();
-
+  var threadDs = new List<int>();
   var regex = new Regex("[0-9]{1,4}", RegexOptions.None);
 
   Parallel.ForEach(items, (item) =>
@@ -24,14 +24,12 @@ try
       item.Code = regex.Match(item.Decription).Value;
       item.ThreadId = Task.CurrentId;
       Console.WriteLine($"Thread Id : {Task.CurrentId} , ID : {item.ID}, Description: {item.Decription}, Code : {item.Code}");
-      AddItemToCovertedList(item, convertItems);
-    }       
+    }
+    AddItemToCovertedList(item, convertItems);
   });
 
-  //Write All Items to TXT
-  BaseOperation.WriteAllItemsToTxt(convertItems);
-  Console.WriteLine($"Toplamda {convertItems.Where(x => x.ThreadId != null).Count()} thread oluşturuldu.");
-
+  //Write All Items to json
+  BaseOperation.WriteAllItemsToJson(convertItems);
 }
 catch (Exception ex)
 {

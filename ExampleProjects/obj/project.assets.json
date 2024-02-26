@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\ExampleProjects\\ExampleProjects.csproj",
+      "projectUniqueName": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\ExampleProjects\\ExampleProjects.csproj",
       "projectName": "ExampleProjects",
-      "projectPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\ExampleProjects\\ExampleProjects.csproj",
+      "projectPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\ExampleProjects\\ExampleProjects.csproj",
       "packagesPath": "C:\\Users\\nursel.altin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\ExampleProjects\\obj\\",
+      "outputPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\ExampleProjects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nursel.altin\\AppData\\Roaming\\NuGet\\NuGet.Config",

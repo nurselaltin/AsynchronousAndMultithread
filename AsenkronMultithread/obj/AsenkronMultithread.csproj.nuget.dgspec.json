@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj": {}
+    "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj": {
+    "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj",
+        "projectUniqueName": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj",
         "projectName": "AsenkronMultithread",
-        "projectPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj",
+        "projectPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\AsenkronMultithread\\AsenkronMultithread.csproj",
         "packagesPath": "C:\\Users\\nursel.altin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithread\\AsenkronMultithread\\AsenkronMultithread\\obj\\",
+        "outputPath": "C:\\Users\\nursel.altin\\Desktop\\Belgeler\\Projects\\AsenkronMultithreadProg\\AsynchronousAndMultithread\\AsenkronMultithread\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nursel.altin\\AppData\\Roaming\\NuGet\\NuGet.Config",
