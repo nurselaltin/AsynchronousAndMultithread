@@ -1,5 +1,6 @@
 ﻿using ExampleProjects.Model;
 using Newtonsoft.Json;
+using System.Collections.Concurrent;
 using System.Reflection;
 
 namespace ExampleProjects
@@ -38,6 +39,22 @@ namespace ExampleProjects
     }
 
     public static void WriteAllItemsToJson(List<ItemModel> items)
+    {
+      try
+      {
+        var assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        var path = $"{assemblyPath}\\Utilities\\ConvertedItems.json";
+
+        var json = JsonConvert.SerializeObject(items);
+        File.WriteAllText(path, json);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+      }
+    }
+
+    public static void WriteAllItemsToJson(ConcurrentDictionary<int, ItemModel> items)
     {
       try
       {
