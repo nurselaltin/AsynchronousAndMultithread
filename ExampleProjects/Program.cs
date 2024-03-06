@@ -1,11 +1,4 @@
-﻿//1) Item.txt dosyası oluştur(+)
-//2) Item modeli oluştur(+)
-//3) Regex sınıfını kullan(+)
-//4) Multithreading yakalaşımını kullan (Asıl anlatılması gereken kısım)(+)
-//5) ConvertedItems.txt dosyasını yeni haliyle güncelle(+)
-//6) Githuba projeyi yükle(+)
-//7) Medium yazısı yaz
-using ExampleProjects;
+﻿using ExampleProjects;
 using ExampleProjects.Model;
 using System.Collections.Concurrent;
 using System.Text.RegularExpressions;

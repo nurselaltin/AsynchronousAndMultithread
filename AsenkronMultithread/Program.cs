@@ -130,35 +130,35 @@
 
 #region Locking 
 
-int i = 1; //Ortak kaynak
+//int i = 1; //Ortak kaynak
 
-  object _lock = new object();
-Thread thread1 = new(() =>
-{
-  lock (_lock) //Kiritik olan kısmı locklıyoruz
-  {
-    while (i < 10) //Kritik Bölge
-    {
-      i++;
-      Console.WriteLine($"Thread 1 : {i}");
-    }
-  }
-});
+//  object _lock = new object();
+//Thread thread1 = new(() =>
+//{
+//  lock (_lock) //Kiritik olan kısmı locklıyoruz
+//  {
+//    while (i < 10) //Kritik Bölge
+//    {
+//      i++;
+//      Console.WriteLine($"Thread 1 : {i}");
+//    }
+//  }
+//});
 
-Thread thread2 = new(() =>
-{
-  lock (_lock) //Kiritik olan kısmı locklıyoruz
-  {
-    while (i > 0) //Kritik Bölge
-    {
-      i--;
-      Console.WriteLine($"Thread 2 : {i}");
-    }
-  }
-});
-thread1.Start();
-thread2.Start();
-Console.ReadLine();
+//Thread thread2 = new(() =>
+//{
+//  lock (_lock) //Kiritik olan kısmı locklıyoruz
+//  {
+//    while (i > 0) //Kritik Bölge
+//    {
+//      i--;
+//      Console.WriteLine($"Thread 2 : {i}");
+//    }
+//  }
+//});
+//thread1.Start();
+//thread2.Start();
+//Console.ReadLine();
 #endregion
 
 #region Sleep 
@@ -542,9 +542,9 @@ Console.ReadLine();
 
 //Thread thread1 = new(() =>
 //{
-//    while (true)
-//      //i++;
-//      Interlocked.Increment(ref i); // Güvenli ve atomik bir şekilde i değeri 1 arttıracak
+//  while (true)
+//    //i++;
+//    Interlocked.Increment(ref i); // Güvenli ve atomik bir şekilde i değeri 1 arttıracak
 //});
 
 //Thread thread2 = new(() =>
@@ -552,19 +552,150 @@ Console.ReadLine();
 //  while (true)
 //  {
 //    Console.WriteLine(i);
+//    Thread.Sleep(1000);
 //  }
 
 //});
 
-//Thread thread3 = new(() =>
-//{
-//  while (true)
-//    //i--;
-//    Interlocked.Decrement(ref i); // Güvenli bir şekilde i değerini 1 azaltacak
-//});
+////Thread thread3 = new(() =>
+////{
+////  while (true)
+////    //i--;
+////    Interlocked.Decrement(ref i); // Güvenli bir şekilde i değerini 1 azaltacak
+////});
 
 //thread1.Start();
 //thread2.Start();
 //thread3.Start();
 
+
+int sharedValue = 0;
+
+int oldValue = Interlocked.CompareExchange(ref sharedValue, 1, 0); //sharedValue değeri 0 ise değerini 1 yap
+
+Console.WriteLine($"Eski değer:{oldValue}");
+Console.WriteLine($"Yeni değer:{sharedValue}");
+
+#endregion
+
+#region Interlocked 
+
+//int i = 0;
+
+//Thread thread1 = new(() =>
+//{
+//  while (true)
+//    //i++;
+//    Interlocked.Increment(ref i); // Güvenli ve atomik bir şekilde i değeri 1 arttıracak
+//});
+
+//Thread thread2 = new(() =>
+//{
+//  while (true)
+//  {
+//    Console.WriteLine(i);
+//    Thread.Sleep(1000);
+//  }
+
+//});
+
+////Thread thread3 = new(() =>
+////{
+////  while (true)
+////    //i--;
+////    Interlocked.Decrement(ref i); // Güvenli bir şekilde i değerini 1 azaltacak
+////});
+
+//thread1.Start();
+//thread2.Start();
+//thread3.Start();
+
+
+int sharedValue = 0;
+
+int oldValue = Interlocked.CompareExchange(ref sharedValue, 1, 0); //sharedValue değeri 0 ise değerini 1 yap
+
+Console.WriteLine($"Eski değer:{oldValue}");
+Console.WriteLine($"Yeni değer:{sharedValue}");
+
+#endregion
+
+#region Spinlock
+//int value = 0;
+//SpinLock spinLock = new SpinLock();
+
+//Thread thread1 = new(() =>
+//{
+//	bool _lockTaken = false;
+//  try
+//  {
+//    spinLock.Enter(ref _lockTaken);
+
+//    if (_lockTaken)
+//    {
+//      for (int i = 0; i < 999; i++)
+//        Console.WriteLine($"Thread1 : {++value}");
+//    }
+//  }
+//  finally { spinLock.Exit(); }
+//});
+
+//Thread thread2 = new(() =>
+//{
+//  bool _lockTaken = false;
+//  try
+//  {
+//    spinLock.Enter(ref _lockTaken);
+
+//    if (_lockTaken)
+//    {
+//      for (int i = 0; i < 999; i++)
+//        Console.WriteLine($"Thread2 : {value--}");
+//    }
+//  }
+//  finally { spinLock.Exit(); }
+//});
+
+//thread1.Start();
+//thread2.Start();
+
+//Console.ReadLine();
+#endregion
+
+#region SpinWait
+//bool waitMood = false; bool condition = false;
+////Uzun süreli beklediğimiz senaryo
+//Thread thread1 = new Thread(() =>
+//{
+//   while (true)
+//   {
+//     if (waitMood) { 
+//        continue;
+//     }
+
+//     if (!condition)
+//     {
+//       continue;
+//     }
+
+//     Console.WriteLine("Thread1 işliyor...");
+//   }
+//});
+////Daha az maliyet / daha performanslı
+//Thread thread2 = new(()=>
+//{
+//  while (true)
+//  {
+//    SpinWait.SpinUntil(() =>
+//    {
+//      return waitMood || condition;
+//    });
+
+//    Console.WriteLine("Thread2 işliyor...");
+//  }
+//});
+
+//thread1.Start();
+//thread2.Start();
+Console.ReadLine();
 #endregion
