@@ -692,36 +692,36 @@
 
 #region AutoResetEvent
 
-AutoResetEvent autoResetEvent = new AutoResetEvent(false); // false değerini verince sinyal verebilecek bir modda oluyor.
-Thread thread1 = new(() => 
-{
-  Console.WriteLine("Thread1");
-  autoResetEvent.Set(); // sinyal veriyor
-});
+//AutoResetEvent autoResetEvent = new AutoResetEvent(false); // false değerini verince sinyal verebilecek bir modda oluyor.
+//Thread thread1 = new(() => 
+//{
+//  Console.WriteLine("Thread1");
+//  autoResetEvent.Set(); // sinyal veriyor
+//});
 
-//Thread2, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
-Thread thread2 = new(() =>
-{
-  //Thread1 sinyalini bekliyor
-  autoResetEvent.WaitOne();
-  Console.WriteLine("Thread2");
-  autoResetEvent.Set(); // sinyal veriyor
-});
+////Thread2, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
+//Thread thread2 = new(() =>
+//{
+//  //Thread1 sinyalini bekliyor
+//  autoResetEvent.WaitOne();
+//  Console.WriteLine("Thread2");
+//  autoResetEvent.Set(); // sinyal veriyor
+//});
 
-//Thread3, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
-Thread thread3 = new(() =>
-{
-  //Thread1 sinyalini bekliyor
-  autoResetEvent.WaitOne();
-  Console.WriteLine("Thread3");
-  autoResetEvent.Set(); // sinyal veriyor
-});
+////Thread3, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
+//Thread thread3 = new(() =>
+//{
+//  //Thread1 sinyalini bekliyor
+//  autoResetEvent.WaitOne();
+//  Console.WriteLine("Thread3");
+//  autoResetEvent.Set(); // sinyal veriyor
+//});
 
-//Sonuç:AutoResetEvent'te bekleyen threadlerden sadece 1 tanesi sinyali alabilir.
-//Yukarıda thread1 sinyal verince ya thread2 ya da thread3 sinyali alabilecek.1-1 ilişkisi var burada
+////Sonuç:AutoResetEvent'te bekleyen threadlerden sadece 1 tanesi sinyali alabilir.
+////Yukarıda thread1 sinyal verince ya thread2 ya da thread3 sinyali alabilecek.1-1 ilişkisi var burada
 
 
-thread1.Start();
-thread2.Start();
-thread3.Start();
+//thread1.Start();
+//thread2.Start();
+//thread3.Start();
 #endregion
