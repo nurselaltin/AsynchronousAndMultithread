@@ -568,55 +568,13 @@
 //thread2.Start();
 //thread3.Start();
 
+//CompareExchange
+//int sharedValue = 0;
 
-int sharedValue = 0;
+//int oldValue = Interlocked.CompareExchange(ref sharedValue, 1, 0); //sharedValue değeri 0 ise değerini 1 yap
 
-int oldValue = Interlocked.CompareExchange(ref sharedValue, 1, 0); //sharedValue değeri 0 ise değerini 1 yap
-
-Console.WriteLine($"Eski değer:{oldValue}");
-Console.WriteLine($"Yeni değer:{sharedValue}");
-
-#endregion
-
-#region Interlocked 
-
-//int i = 0;
-
-//Thread thread1 = new(() =>
-//{
-//  while (true)
-//    //i++;
-//    Interlocked.Increment(ref i); // Güvenli ve atomik bir şekilde i değeri 1 arttıracak
-//});
-
-//Thread thread2 = new(() =>
-//{
-//  while (true)
-//  {
-//    Console.WriteLine(i);
-//    Thread.Sleep(1000);
-//  }
-
-//});
-
-////Thread thread3 = new(() =>
-////{
-////  while (true)
-////    //i--;
-////    Interlocked.Decrement(ref i); // Güvenli bir şekilde i değerini 1 azaltacak
-////});
-
-//thread1.Start();
-//thread2.Start();
-//thread3.Start();
-
-
-int sharedValue = 0;
-
-int oldValue = Interlocked.CompareExchange(ref sharedValue, 1, 0); //sharedValue değeri 0 ise değerini 1 yap
-
-Console.WriteLine($"Eski değer:{oldValue}");
-Console.WriteLine($"Yeni değer:{sharedValue}");
+//Console.WriteLine($"Eski değer:{oldValue}");
+//Console.WriteLine($"Yeni değer:{sharedValue}");
 
 #endregion
 
@@ -697,5 +655,73 @@ Console.WriteLine($"Yeni değer:{sharedValue}");
 
 //thread1.Start();
 //thread2.Start();
-Console.ReadLine();
+//Console.ReadLine();
+#endregion
+
+#region MemoryBarrier
+
+//int i = 0;
+
+//Thread writeThread = new(() =>
+//{
+//  while (true)
+//  {
+//    Interlocked.Increment(ref i);
+//    //i değişkenin güncel değerinin diğer threadler tarafından görülebilmesini sağlıyor
+//    Thread.MemoryBarrier();
+
+//  }
+//});
+
+////------------------------------------
+
+//Thread readThread = new(() =>
+//{
+//  while (true)
+//  {
+//    //i değerinin en güncel halini okumak için kullanılır.
+//    Thread.MemoryBarrier();
+//  }
+//});
+
+//writeThread.Start();
+//readThread.Start();
+//Console.ReadLine();
+
+#endregion
+
+#region AutoResetEvent
+
+AutoResetEvent autoResetEvent = new AutoResetEvent(false); // false değerini verince sinyal verebilecek bir modda oluyor.
+Thread thread1 = new(() => 
+{
+  Console.WriteLine("Thread1");
+  autoResetEvent.Set(); // sinyal veriyor
+});
+
+//Thread2, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
+Thread thread2 = new(() =>
+{
+  //Thread1 sinyalini bekliyor
+  autoResetEvent.WaitOne();
+  Console.WriteLine("Thread2");
+  autoResetEvent.Set(); // sinyal veriyor
+});
+
+//Thread3, thread1 işini bitirince veya içeride bir koşulu sağlayınca işlemine başlayacak.
+Thread thread3 = new(() =>
+{
+  //Thread1 sinyalini bekliyor
+  autoResetEvent.WaitOne();
+  Console.WriteLine("Thread3");
+  autoResetEvent.Set(); // sinyal veriyor
+});
+
+//Sonuç:AutoResetEvent'te bekleyen threadlerden sadece 1 tanesi sinyali alabilir.
+//Yukarıda thread1 sinyal verince ya thread2 ya da thread3 sinyali alabilecek.1-1 ilişkisi var burada
+
+
+thread1.Start();
+thread2.Start();
+thread3.Start();
 #endregion
